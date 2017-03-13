@@ -1,0 +1,12 @@
+<h1>Results Page!!!</h1>
+<a href="/">Search Again!</a>
+<ul>
+    <% data.photos.photo.forEach(function(photo) { %>
+      <li>
+          <strong>
+              <%= photo["title"] %>
+              <img src='http://farm<%= photo['farm']%>.staticflickr.com/<%= photo['server'] %>/<%= photo['id'] %>_<%= photo['secret'] %>_m.jpg'>
+          </strong> 
+      </li>
+    <% }) %>
+</ul>
